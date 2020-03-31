@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0,1 python train.py --model bn_inception --num_frames 3 -b 64 --dataset ucf101 --learning_rate 1e-3 --epoch 70 -lr_step 30 60 --rgb_dr 0.8 --sample sparse --val_freq 1 --modality rgb --num_workers 4 --partial_bn True 
